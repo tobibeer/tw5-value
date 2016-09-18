@@ -1,0 +1,13 @@
+created: 20160918173729354
+creator: Tobias Beer
+modified: 20160918173730459
+modifier: Tobias Beer
+title: value-Install
+type: text/vnd.tiddlywiki
+
+<<plugin-install value>>
+
+!! Version History
+
+; 0.5.0 / 2016-09-18
+: initial version

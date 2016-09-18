@@ -1,0 +1,23 @@
+title: $:/plugins/tobibeer/value/readme
+
+The plugin $:/plugins/tobibeer/value provides:
+
+; value[]
+: a filter operator to test input titles for a given value
+
+<br>
+
+!! Syntax
+
+; value:is[foo]
+: returns `yes` or `no` depending on whether any input title is `foo`
+; value[foo]
+: returns `foo` when `foo` is an input title
+; !value[foo]
+: returns all those input titles that are not `foo`
+; !value:is[foo]
+: returns `yes` or `no` depending on whether one input titles is not `foo`
+
+
+; documentation / examples / demos...
+: http://tobibeer.github.io/tw5-plugins#value

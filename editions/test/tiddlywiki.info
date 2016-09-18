@@ -1,0 +1,14 @@
+{
+	"description": "tobibeer/value tests",
+	"plugins": [
+		"tiddlywiki/jasmine",
+		"tobibeer/value"
+	],
+	"themes": [
+		"tiddlywiki/vanilla"
+	],
+	"build": {
+		"index": [
+			"--rendertiddler","$:/core/save/all","test.html","text/plain"]
+	}
+}

@@ -1,0 +1,20 @@
+created: 20160918170808374
+creator: Tobias Beer
+modified: 20160918175415546
+modifier: Tobias Beer
+title: value-Syntax
+type: text/vnd.tiddlywiki
+
+The ''value'' filter tests input titles against a value specified in the ''operand'', e.g.
+
+<<` """<$vars this="that">
+<$list filter="[<this>value[that]]"/>
+</$vars>""">>
+
+Above, `that` is the operand against which all input titles are tested, whereas the input title being tested is defined in the variable ''this'' to be precisely `that`.
+
+If you wish to return the filter result as more of a boolean expression, you can use the `is` ''suffix'' returning either `yes` or `no`, e.g.:
+
+<<` """<$vars this="that">
+<$list filter="[<this>value:is[something else]]"/>
+</$vars>""">>

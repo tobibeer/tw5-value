@@ -1,0 +1,72 @@
+created: 20160918171656070
+creator: Tobias Beer
+modified: 20160918173704692
+modifier: Tobias Beer
+title: value-Examples
+type: text/vnd.tiddlywiki
+
+//testing for an empty list...//
+
+<<` """{{{ [has[doesntexist]value[]] }}}""">>
+
+You can use the above syntax to test for an empty list similar to using the `emptyMessage` attribute of the core <<tw ListWidget>> like so:
+
+<$macrocall $name="`" text="""<$list filter="<<doesntexist>> +[value[]]">
+Show this, if the filter condition yields an empty list.
+</$list>"""/>
+
+// the value of `foo` is `foo`://
+
+<<` """{{{ [[foo]value[foo]] }}}""">>
+
+// is the value of `foo` actually `foo`?//
+
+<<` """{{{ [[foo]value:is[foo]] }}}""">>
+
+// is the value of `foo` actually `bar`?//
+
+<<` """{{{ [[foo]value:is[bar]] }}}""">>
+
+// is the value of `foo` not `bar`?//
+
+<<` """{{{ [[foo]!value:is[bar]] }}}""">>
+
+// `foo` is not `foo`?//
+
+<<` """<$list filter="[[foo]!value[foo]]" emptyMessage="looks like the value of `foo` is `foo`, after all"/>""">>
+
+// give me `bar` if it's not of value `foo`://
+
+<<` """{{{ [[bar]!value[foo]] }}}""">>
+
+// in `foo` and `bar` there is one with value `foo`://
+
+<<` """{{{ foo bar +[value[foo]] }}}""">>
+
+// in `foo` and `bar` there is one with value `bar`://
+
+<<` """{{{ foo bar +[value[bar]] }}}""">>
+
+// `foo` is not empty, after all://
+
+<<` """{{{ [[foo]!value[]] }}}""">>
+
+// neither `foo` nor `bar` are of empty value://
+
+<<` """{{{ foo bar +[!value[]] }}}""">>
+
+// Is neither `foo` nor `bar` of empty value?//
+
+<<` """{{{ foo bar +[!value:is[]] }}}""">>
+
+// Is the value of either `foo` or `bar` actually `foo`?//
+
+<<` """{{{ foo bar +[value:is[foo]] }}}""">>
+
+// Is `foo` indeed not empty?//
+
+<<` """{{{ [[foo]!value:is[]] }}}""">>
+
+// Are neither `foo` nor `bar` empty?//
+
+<<` """{{{ foo bar +[!value:is[]] }}}""">>

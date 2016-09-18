@@ -1,0 +1,10 @@
+created: 20160918173736097
+creator: Tobias Beer
+modified: 20160918173737787
+modifier: Tobias Beer
+tabs: Info Syntax Examples Install
+tags: Filters Plugins
+title: value
+type: text/vnd.tiddlywiki
+
+<<plugin-docs value>>

@@ -1,0 +1,12 @@
+{
+    "title": "$:/plugins/tobibeer/value",
+    "description": "A filter to test input titles for a given value",
+    "author": "Tobias Beer",
+    "version": "0.5.0",
+    "core-version": ">=5.1.9",
+    "source": "https://github.com/tobibeer/tw5-value",
+    "documentation": "https://tobibeer.github.io/tw5-value",
+    "plugin-type": "plugin",
+	"requires": "",
+	"list": "readme"
+}
