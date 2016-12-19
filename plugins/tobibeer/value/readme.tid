@@ -3,7 +3,7 @@ title: $:/plugins/tobibeer/value/readme
 The plugin $:/plugins/tobibeer/value provides:
 
 ; value[]
-: a filter operator to test input titles for a fiven value
+: a filter operator to test input titles for a given value
 
 <br>
 

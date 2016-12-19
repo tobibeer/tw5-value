@@ -33,7 +33,6 @@ exports.value = function(source,operator,options) {
 			}
 		});
 	}
-	console.log("RESULTS: " + results);
 	if(results.length){
 		if (operator.suffix === "is") {
 			results = results.length ? ["yes"] : ["no"];
